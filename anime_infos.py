@@ -39,8 +39,3 @@ class API_USAGE():
         anime_info = response.json()
         response.close()
         return anime_info['synopsis']
-
-if __name__ == '__main__':
-     new_user = API_USAGE('keven_Lohan')
-     new_user.get_all_anime_watched()
-     new_user.get_anime_sinopse(35507)
