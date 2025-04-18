@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ anime_info.title }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #layout_display {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        #layout_display img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+
+        #layout_display h3 {
+            margin-top: 15px;
+        }
+
+        #MAL_info {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
+            text-align: justify;
+        }
+
+        blockquote {
+            margin: 0;
+            font-style: italic;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="layout_display">
+        <img src="{{anime_info.image}}" alt="Imagem do anime"><br>
+        <h3><b>{{anime_info.title}}</b></h3>
+    </div>
+    <div id="MAL_info">
+        <p><blockquote>{{anime_info.synopsis}}</blockquote></p>
+    </div>
+</body>
+</html>

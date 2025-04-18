@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login MAL</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #f2f2f2;
+            font-size: 14px;
+        }
+
+        hr {
+            width: 60%;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="/get_animes" method="POST">
+            <input type="text" name="user" id="MAL_USER" placeholder="Digite seu usuário">
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+
+    <footer>
+        <p>Creation date: <small>18/04/2025</small></p>
+        <hr>
+        <p><b>Keven Lohan Bezerra Neves</b></p> 
+        <hr>
+        <p>GitHub: <i><mark>keventapi</mark></i></p>
+        <hr>
+        <p><del>this page was built using MyAnimeList API</del></p>
+        <hr>
+        <p>keventapi<sup>&trade;</sup></p>
+        <hr>
+        <p>for test use: <q>keven_lohan</q> as user</p>
+        <hr>
+    </footer>
+</body>
+</html>
