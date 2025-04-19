@@ -21,9 +21,5 @@ def get_animes():
     data = anime_infos.API_USAGE(user=user_name).start()
     return render_template('user_animes.html', data=data)
 
-@app.route('/user/<user_name>')
-def show_animes(user_name):
-    return "<p>hello_world</p>"
-
 if __name__ == '__main__':
     app.run(debug=True)
